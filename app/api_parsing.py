@@ -42,6 +42,3 @@ def get_holiday_data(day, month):
         except:
             pass
     return d
-
-for i in range(1, 12):
-    print(get_holiday_data(10,i))
