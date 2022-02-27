@@ -1,0 +1,18 @@
+body {
+	background: #f3e0e2;
+}
+
+.card-shado{
+    box-shadow: -13px 8px 58px -32px rgba(0,0,0,0.82);
+-webkit-box-shadow: -13px 8px 58px -32px rgba(0,0,0,0.82);
+-moz-box-shadow: -13px 8px 58px -32px rgba(0,0,0,0.82);
+}
+
+.orange-text {
+    font-family: 'Montserrat', sans-serif;
+  	color: #FF4B2B
+}
+
+.card-text {
+    float: right;
+}
