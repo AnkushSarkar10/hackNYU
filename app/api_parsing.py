@@ -25,8 +25,9 @@ def get_holidays(day, month, country):
                 }
 
     for i in data["response"]["holidays"]:
-        holiday_name = i["name"] 
-        result.append(holiday_name)
+        holiday_name = i["name"]
+        if holiday_name not in result:
+            result.append(holiday_name)
     
     print("done " + country)
     return result
