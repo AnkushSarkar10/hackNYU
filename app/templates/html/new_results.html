@@ -18,20 +18,22 @@
               <p class="fw-light fs-3 text-center">Here is what world celeberates on your birthday!</b>
             </div>
         </div>
-
-        {% for country in data %} 
-        {% for festival in data[country] %}
-        <div class="card card-shado w-50 mx-auto mb-4">
-            <div class="card-body">
-            <h2 class="card-title fs-2 orange-text">{{ festival }}</h5>
-            <p class="card-text fw-light fs-4 text-right">Celebrated in <b>{{ country }}</b>
+        {% if data|length != 0 %}
+            {% for country in data %} 
+            {% for festival in data[country] %}
+            <div class="card card-shado w-50 mx-auto mb-4">
+                <div class="card-body">
+                <h2 class="card-title fs-2 orange-text">{{ festival }}</h5>
+                <p class="card-text fw-light fs-4 text-right">Celebrated in <b>{{ country }}</b>
+                </div>
             </div>
-        </div>
-        {% endfor %}
-        {% endfor %}
+            {% endfor %}
+            {% endfor %}
         <p class="mx-auto fw-light fs-4 text-right mb-4">“All for one and one for all, united we stand divided we fall.” 
             ― Alexandre Dumas, The Three Musketeers"</p>
+        {% else %}
+        <p class="mx-auto fw-light fs-4 text-right mb-4">No other country celeberates anything on you birthday :(</p>
+        {% endif %}
     </div>
-  
 </body>
 </html>

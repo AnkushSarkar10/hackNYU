@@ -33,7 +33,7 @@
 					<h3>Have you ever wondered what else is happening on your birthday around the world? Well! Let's find out together.</h3>
 				</div>
           <span style="margin-bottom: 10px;">Please enter you Birthdate below:</span>
-          <input type="date" placeholder ="Birth Date" name="date"/>
+          <input type="date" placeholder ="Birth Date" name="date" id="date"/>
           <!-- <input type="year" placeholder ="Name" name="name"/> -->
           <button type="submit" class="btn" onclick="loading();">FIND OUT!</button>
           
@@ -57,7 +57,12 @@
     function loading(){
       console.log("LODINGGGGGGGGGGG");
         $("#loading").show();
-        $("#container").hide();       
+        $("#container").hide(); 
+        var a = document.getElementById("date").value;
+        if (a == null || a == "") {
+          alert("Please Fill All Required Field");
+          return false;
+        }     
     }
   </script>
 </html>
