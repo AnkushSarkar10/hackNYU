@@ -33,7 +33,7 @@ def get_holidays(day, month, country):
 
 def get_holiday_data(day, month):
     d = {}
-    country_codes = [["IN","India"], ["CA", "Canda"], ["UK","United Kingdom"], ["CN", "China"], ["DE", "Germany"], ["JP", "Japan"], ["KR", "Korea"], ["FR", "France"],["MX", "Mexico"], ["AU", "Australia"], ["BR", "Brazil"]]
+    country_codes = [["IN","India"], ["CA", "Canda"], ["UK","United Kingdom"], ["CN", "China"], ["DE", "Germany"], ["JP", "Japan"], ["FR", "France"],["MX", "Mexico"], ["AU", "Australia"], ["BR", "Brazil"]]
     for i in country_codes:
         try:
             l = get_holidays(day, month, i[0])

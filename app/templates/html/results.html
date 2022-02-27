@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Every Day Is Special</title>
+    <link href="{{ url_for('static',filename = 'CSS/style.css') }}" rel="stylesheet" type="text/css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    
+  </head>
+  <body>
+    <div class = "container" id = "container">
+		  <div class="form-container data-entry-container">
+        <form action="#">
+          <h1>What else is happening?</h1>
+          <div class="reason-container">
+					<h3>Here is what world celeberates on your birthday!</h3>
+				</div>
+          <div class="d-flex justify-content-center">
+            <div class="spinner-border" 
+                 role="status" id="loading">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        
+          <ul>
+          
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+       
+          <li>9</li>
+          <li>10</li>
+       
+          <li>11</li>
+          <li>12</li>
+       
+          <li>13</li>
+          <li>14</li>
+      
+          <li>15</li>
+          <li>16</li>
+          <li>17</li>
+          <li>18</li>
+          <li>19</li>
+          <li>20</li>
+        
+       </ul>
+      
+
+        </form>
+      </div>
+      <div class="overlay-container">
+			<div class="overlay">
+				<div class="slideshow-container">
+          <img  src="{{ url_for('static',filename = 'IMG/diversitypic1.jpg') }}">
+          <img  src ="{{ url_for('static',filename = 'IMG/diversitypic2.jpg') }}"> 
+          <img  src="{{ url_for('static',filename = 'IMG/diversitypic3.jpg') }}">
+          <img  src="{{ url_for('static',filename = 'IMG/diversitypic4.jpg') }}">
+          <img  src="{{ url_for('static',filename = 'IMG/diversitypic5.jpg') }}">
+          <img  src="{{ url_for('static',filename = 'IMG/diversitypic6.jpg') }}">
+          <img  src="{{ url_for('static',filename = 'IMG/diversitypic7.jpg') }}">
+        </div>
+      </div>
+      </div>
+    
+    <script src="{{ url_for('static',filename = 'JS/script.js') }}"></script>
+    </div>
+    <br></br>
+    <h2> “All for one and one for all, united we stand divided we fall.” 
+― Alexandre Dumas, The Three Musketeers"</h2>
+  </body>
+</html>

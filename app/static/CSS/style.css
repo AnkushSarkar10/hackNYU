@@ -121,10 +121,12 @@ input {
 	height: 110%;
 	width: 200%;
 }
+
 .blur {
     margin: -5px 0 0 -5px;
     backdrop-filter: blur(10px);
-    background: url("diversity.jpg");
+    background: url('/static/img/diversity.jpg');
+	/* url({{ url_for('static', filename='IMG/diversity.jpg') }}) */
     height:300px;
     width:300px;
 

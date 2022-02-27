@@ -36,7 +36,7 @@ function show(data) {
     for (let r of data.list) {
         tab += `<tr> 
     <td>${r.country} </td>
-    <td>${r.speciality?}</td>
+    <td>${r.speciality}</td>
            
 </tr>`;
     }
