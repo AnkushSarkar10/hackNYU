@@ -16,18 +16,18 @@ cryptography==2.8
 dbus-python==1.2.16
 distlib==0.3.0
 distro==1.4.0
-distro-info===0.23ubuntu1
+distro-info==1.0
 entrypoints==0.3
 filelock==3.0.12
 Flask==2.0.3
 Flask-WTF==1.0.0
-google==3.0.0
-google-auth==2.6.0
-google-auth-httplib2==0.1.0
-google-auth-oauthlib==0.5.0
-google-cloud==0.34.0
-google-cloud-vision==2.6.3
-googleapis-common-protos==1.55.0
+# google==3.0.0
+# google-auth==2.6.0
+# google-auth-httplib2==0.1.0
+# google-auth-oauthlib==0.5.0
+# google-cloud==0.34.0
+# google-cloud-vision==2.6.3
+# googleapis-common-protos==1.55.0
 grpcio==1.44.0
 grpcio-status==1.44.0
 httplib2==0.20.4
